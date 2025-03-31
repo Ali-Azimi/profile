@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 
 const LoginForm = () => {
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [confirmCode, setConfirmCode] = useState('');
-
-  const handlePhoneNumberChange = (event) => {
-    setPhoneNumber(event.target.value);
-  };
-
-  const handleConfirmCodeChange = (event) => {
-    setConfirmCode(event.target.value);
-  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,8 +14,6 @@ const LoginForm = () => {
       <input
         type="tel"
         id="phoneNumber"
-        value={phoneNumber}
-        onChange={handlePhoneNumberChange}
         required
       />
 
@@ -33,8 +21,6 @@ const LoginForm = () => {
       <input
         type="text"
         id="confirmCode"
-        value={confirmCode}
-        onChange={handleConfirmCodeChange}
         required
       />
 

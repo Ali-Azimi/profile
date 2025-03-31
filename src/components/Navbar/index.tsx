@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -12,9 +11,9 @@ const Navbar = () => {
             <button onClick={() => {}}>Log Out</button>
           </>
         ) : (
-          <Link to="/login" className="navbar__link">
+          <a href="/login" className="navbar__link">
             Login
-          </Link>
+          </a>
         )}
       </div>
     </nav>
