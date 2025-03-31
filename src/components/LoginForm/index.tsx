@@ -10,17 +10,17 @@ const LoginForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="phoneNumber">Phone Number:</label>
+      <label htmlFor="userName">UserName:</label>
       <input
-        type="tel"
-        id="phoneNumber"
+        type="text"
+        id="userName"
         required
       />
 
-      <label htmlFor="confirmCode">Confirmation Code:</label>
+      <label htmlFor="password">Password:</label>
       <input
         type="text"
-        id="confirmCode"
+        id="password"
         required
       />
 
